@@ -13,14 +13,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 50
-    } // data 개수
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "TableCellType")
-        
-        cell.textLabel?.text="\(indexPath.row)"
+        let cell = TableViewMain.dequeueReusableCell(withIdentifier: "Type1", for: indexPath) as! Type1 // Type1이 자식임이 확실하기 때문
+        cell.LableText.text = "\(indexPath.row)"
         return cell
-    } // 어떤 데이터
+    }
     
 
     override func viewDidLoad() {
