@@ -20,29 +20,41 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Type1" rowHeight="56" id="UK7-nl-0mT" customClass="Type1" customModule="News_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="56"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Type1" rowHeight="67" id="UK7-nl-0mT" customClass="Type1" customModule="News_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UK7-nl-0mT" id="Ckf-2S-tXh">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqp-Gy-gye">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="56.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqp-Gy-gye">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="67"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="374" id="Bsq-2v-Uis"/>
+                                                        <constraint firstAttribute="height" constant="67" id="Kls-KG-VHG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Uqp-Gy-gye" firstAttribute="leading" secondItem="Ckf-2S-tXh" secondAttribute="leading" constant="20" symbolic="YES" id="4f5-KY-X5x"/>
                                                 <constraint firstItem="Uqp-Gy-gye" firstAttribute="leading" secondItem="Ckf-2S-tXh" secondAttribute="leading" constant="20" symbolic="YES" id="AJN-LJ-0V7"/>
                                                 <constraint firstAttribute="trailing" secondItem="Uqp-Gy-gye" secondAttribute="trailing" constant="20" symbolic="YES" id="ETB-sX-7rj"/>
-                                                <constraint firstAttribute="bottom" secondItem="Uqp-Gy-gye" secondAttribute="bottom" constant="-0.5" id="FNY-Bk-747"/>
                                                 <constraint firstItem="Uqp-Gy-gye" firstAttribute="top" secondItem="Ckf-2S-tXh" secondAttribute="top" id="Jgg-wM-G5S"/>
                                                 <constraint firstAttribute="trailing" secondItem="Uqp-Gy-gye" secondAttribute="trailing" constant="20" symbolic="YES" id="JrB-1e-IHg"/>
+                                                <constraint firstItem="Uqp-Gy-gye" firstAttribute="leading" secondItem="Ckf-2S-tXh" secondAttribute="leading" constant="20" symbolic="YES" id="Mtq-pb-5Kp"/>
                                                 <constraint firstItem="Uqp-Gy-gye" firstAttribute="leading" secondItem="Ckf-2S-tXh" secondAttribute="leading" constant="20" symbolic="YES" id="Pzt-Xr-OUI"/>
-                                                <constraint firstAttribute="bottom" secondItem="Uqp-Gy-gye" secondAttribute="bottom" constant="-0.5" id="gHB-AX-gZJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Uqp-Gy-gye" secondAttribute="trailing" constant="20" symbolic="YES" id="QZd-ay-ytt"/>
+                                                <constraint firstAttribute="trailing" secondItem="Uqp-Gy-gye" secondAttribute="trailing" constant="20" symbolic="YES" id="Ulv-mQ-YPj"/>
+                                                <constraint firstItem="Uqp-Gy-gye" firstAttribute="top" secondItem="Ckf-2S-tXh" secondAttribute="top" id="Zxf-eY-Qpj"/>
+                                                <constraint firstItem="Uqp-Gy-gye" firstAttribute="top" secondItem="Ckf-2S-tXh" secondAttribute="top" id="jaJ-up-5W9"/>
+                                                <constraint firstAttribute="trailing" secondItem="Uqp-Gy-gye" secondAttribute="trailing" constant="20" symbolic="YES" id="oRa-Ff-8cF"/>
+                                                <constraint firstItem="Uqp-Gy-gye" firstAttribute="leading" secondItem="Ckf-2S-tXh" secondAttribute="leading" constant="20" symbolic="YES" id="tyb-c7-ch8"/>
+                                                <constraint firstItem="Uqp-Gy-gye" firstAttribute="top" secondItem="Ckf-2S-tXh" secondAttribute="top" id="wb3-dt-uya"/>
                                                 <constraint firstItem="Uqp-Gy-gye" firstAttribute="top" secondItem="Ckf-2S-tXh" secondAttribute="top" id="x6g-g0-hnH"/>
+                                                <constraint firstAttribute="bottom" secondItem="Uqp-Gy-gye" secondAttribute="bottom" id="xNq-BF-mOY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

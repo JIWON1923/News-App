@@ -59,3 +59,14 @@
 
 - 강제로 추론하는 방법이다. (내가 자식이 맞아!)
 
+
+## Cell Click Event
+
+## News App
+1. HTTP 통신
+- urlsession
+2. JSON 데이터 형태
+- 정의: Javascript 객체 문법으로 구조화된 데이터를 표현하기 위한 문자 기반의 표준 포맷
+- 간단히 말하자면, 네트워크에서 통신 내에서 데이터를 주고받을 때 JSON으로 주고받는 데이터 형태
+- 기본 형태: {"key":"value"} 또는 {["value","value","value"]}
+- 추가: {[{"key":"value"}, {"key":"value"}, {"key":"value"}]} 이러한 배열로 선언 가능
