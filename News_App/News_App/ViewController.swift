@@ -32,13 +32,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     cell.LableText.text = title // 앞에 Optional을 없앰
                 }
             }
-            
-            
         }
         return cell
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         TableViewMain.delegate = self
@@ -68,10 +65,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 }
                 catch{
                 }
-                
             }
         }
         task.resume()
     }
-    
 }
