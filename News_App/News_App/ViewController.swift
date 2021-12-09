@@ -44,9 +44,48 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     //Click
-    //func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //    print(indexPath.row)
-    //}
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "NewsDetailController") as! NewsDetailController
+        if let news = newsData{
+            let row = news[indexPath.row]
+            if let r = row as? Dictionary<String, Any>{
+                if let imageUrl = r["urlToImage"] as? String{
+                    controller.imageUrl = imageUrl
+                }
+                if let desc = r["description"] as? String{
+                    controller.desc = desc
+                }
+            }
+        }
+        
+        //showDetailViewController(controller, sender: nil)
+            
+    }
+    
+    //segue 값을 전달하는 방법
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let id = segue.identifier, "NewsDetail"==id {
+            if let controller = segue.destination as? NewsDetailController{
+                if let news = newsData{
+                    if let indexPath = TableViewMain.indexPathForSelectedRow{
+                        let row = news[indexPath.row]
+                        if let r = row as? Dictionary<String, Any>{
+                            
+                            if let imageUrl = r["urlToImage"] as? String{
+                                controller.imageUrl = imageUrl
+                            }
+                            if let desc = r["description"] as? String{
+                                controller.desc = desc
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
     
     func getNews(){
         let task = URLSession.shared.dataTask(with: URL(string: "https://newsapi.org/v2/everything?q=apple&from=2021-12-07&to=2021-12-07&sortBy=popularity&apiKey=8a063f28833944b1a2ab501af42b18b2")!) { (data, response, error )in
@@ -69,4 +108,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         task.resume()
     }
+    
+    // 1. 상세 화면 구현
+    // 2. 상세 화면으로 값 보내기
+    // 3. 화면 이동
 }

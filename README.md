@@ -60,8 +60,6 @@
 - 강제로 추론하는 방법이다. (내가 자식이 맞아!)
 
 
-## Cell Click Event
-
 ## News App
 
 1. HTTP 통신
@@ -141,3 +139,59 @@ DispatchQueue.main.async {
 
 
 - tableView 함수에 값을 변경하는 코드를 따로 작성해야한다.
+
+
+3) 결과 화면
+<img height="500" src="https://user-images.githubusercontent.com/68676844/145375060-10b2978d-f987-442e-a649-9daf1504e8d3.png">
+
+
+## News App Detail
+- 위에서 만든 뉴스 제목을 클릭하면, 뉴스 내용을 볼 수 있도록 구현하고자 한다.
+
+1. 클릭 시 이동할 수 있도록 구현
+
+1) Navigation controller 추가
+
+2) 새로 생긴 Root view 삭제
+
+3) 기존 Table view를 root view로 설정
+
+
+
+2. 뉴스 상세 화면
+1) View Controller 추가
+
+
+2) View controller scene에 id 부여
+보통 클래스명과 동일하게 설정한다. (NewsDetailController)
+
+3) Class 생성 후 위 Scene과 연결
+
+4) Image View
+(1) Image view 추가
+
+(2) constraint 추가
+
+(3) view의 content mode 설정
+- Aspect Fit으로 설정
+
+4) 뉴스 내용
+(1) Lable 추가
+
+(2) Lable과 Image view 사이 constraint 추가
+- vertical spac....?
+
+(3) Label contraint 추가
+- 좌, 우 추가
+
+
+5) Image view, Label을 class와 연결
+(1) Image url 값 받기
+(2) descriptrion 값 받기
+
+
+3. 값 넘기기
+- tableView delegate
+- storyboard(segue) 총 2가지 방법을 사용할 수 있다.
+
+4. 화면 이동
