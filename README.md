@@ -1,5 +1,9 @@
 # News-App
 
+<image height="500" src="https://user-images.githubusercontent.com/68676844/145427167-e1a0e7ae-52c4-4812-af7d-b60ca1cca763.gif">
+- Apple 관련 기사를 보여주는 News app을 만들 것입니다.
+- 자세한 과정은 리드미에 있습니다.
+
 ## Table View와 Table view controller
 <img width="684" src="https://user-images.githubusercontent.com/68676844/145227678-afb28f92-2232-4d90-b264-e1ca0234d923.png">
 
@@ -151,39 +155,52 @@ DispatchQueue.main.async {
 1. 클릭 시 이동할 수 있도록 구현
 
 1) Navigation controller 추가
+<img width="80%" src="https://user-images.githubusercontent.com/68676844/145427551-8d38383b-d37b-4b67-aa8c-b78125f09c95.png">
+
+
+<img width="80%" src="https://user-images.githubusercontent.com/68676844/145427641-957b984a-df98-4b15-88d0-4ad79c28f028.png">
+
 
 2) 새로 생긴 Root view 삭제
+<img width="80%" src="https://user-images.githubusercontent.com/68676844/145427709-7c7799a9-7e75-43ef-ac01-d320f89211aa.png">
+
 
 3) 기존 Table view를 root view로 설정
+<img width="80%"  src="https://user-images.githubusercontent.com/68676844/145427759-752abc7f-069a-41e4-b3e7-94862c6220b5.png">
 
 
 
 2. 뉴스 상세 화면
 1) View Controller 추가
-
+<img width="80%" src="https://user-images.githubusercontent.com/68676844/145427894-2b925df8-3905-4db6-bdbc-d65c9816fd3b.png">
 
 2) View controller scene에 id 부여
 보통 클래스명과 동일하게 설정한다. (NewsDetailController)
+
+<img width="80%" src="https://user-images.githubusercontent.com/68676844/145428092-010138ce-195e-4d35-b579-acbc271d6e7e.png">
 
 3) Class 생성 후 위 Scene과 연결
 
 4) Image View
 (1) Image view 추가
+<img width="80%" src="https://user-images.githubusercontent.com/68676844/145428647-bb8bf092-d3f1-4c02-97d9-0638dd2d5456.png">
 
 (2) constraint 추가
 
 (3) view의 content mode 설정
 - Aspect Fit으로 설정
+<img width="80%" src="https://user-images.githubusercontent.com/68676844/145428911-ed7bdabd-ff1a-41cc-9e40-b59a95924c78.png">
+
 
 4) 뉴스 내용
 (1) Lable 추가
 
 (2) Lable과 Image view 사이 constraint 추가
-- vertical spac....?
+- vertical spacing
+<img width="272" alt="스크린샷 2021-12-09 오후 9 32 08" src="https://user-images.githubusercontent.com/68676844/145429071-01afbb36-5c66-4a0f-885e-80d0c7039135.png">
 
 (3) Label contraint 추가
 - 좌, 우 추가
-
 
 5) Image view, Label을 class와 연결
 (1) Image url 값 받기
@@ -195,3 +212,8 @@ DispatchQueue.main.async {
 - storyboard(segue) 총 2가지 방법을 사용할 수 있다.
 
 4. 화면 이동
+<img width="1440" alt="스크린샷 2021-12-09 오후 10 59 23" src="https://user-images.githubusercontent.com/68676844/145429256-37886558-7057-4d9c-a4d1-30fbe310b648.png">
+
+5. 결과화면
+
+<image height="500" src="https://user-images.githubusercontent.com/68676844/145427167-e1a0e7ae-52c4-4812-af7d-b60ca1cca763.gif">
